@@ -1,133 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Personal website for [Your Name], a [programme or role]."
-    />
-    <title>[Your Name] | [programme or role]</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The personal portfolio of WEI ZiZhou, a Year 4 Financial Analysis and FinTech student at HSUHK.">
+  <title>WEI ZiZhou | FAFT Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Site-wide navigation -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="site-title" href="#home">WEI ZiZhou <span>| FAFT Portfolio</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header class="site-header">
-      <nav class="nav container" aria-label="Main navigation">
-        <a class="brand" href="#top">[Your Name]</a>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+  <main>
+    <!-- Introductory hero and CSS-only avatar -->
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Financial Analysis &amp; FinTech · HSUHK</p>
+          <h1 id="hero-title">Hello, I’m <span>WEI ZiZhou.</span></h1>
+          <p class="hero-intro">Welcome to my personal website. I am a final-year FAFT student exploring how thoughtful technology can shape the future of finance.</p>
+          <a class="button-link" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a>
         </div>
-      </nav>
-    </header>
+        <div class="avatar" role="img" aria-label="Decorative avatar with the initials WZ">
+          <span class="avatar-sun"></span>
+          <span class="avatar-arc"></span>
+          <span class="avatar-initials">WZ</span>
+          <span class="avatar-caption">CURIOUS BY DESIGN</span>
+        </div>
+      </div>
+      <div class="hero-note container" aria-hidden="true">Finance meets possibility <span>✳</span></div>
+    </section>
 
-    <main id="main-content">
-      <section class="hero container" id="top">
-        <div class="hero-text">
-          <p class="eyebrow">Hello, I’m</p>
-          <h1>[Your Name]</h1>
-          <p class="intro">
-            I am a [programme or role], and I am learning, building, and growing
-            through thoughtful projects and creative problem-solving.
-          </p>
-          <div class="hero-links">
-            <a class="button primary" href="#projects">View projects</a>
-            <a class="button secondary" href="#contact">Get in touch</a>
-          </div>
+    <!-- Personal introduction -->
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">A little about me</p>
+          <h2 id="about-title">Curious about the numbers.<br><span>Excited by what’s next.</span></h2>
         </div>
-        <div class="hero-card" aria-label="Profile introduction card">
-          <p class="card-label">Current focus</p>
-          <p class="card-title">Learning and creating</p>
-          <p>
-            I enjoy building simple, useful, and approachable digital experiences.
-          </p>
+        <div class="about-copy">
+          <p>I am currently a Year 4 student majoring in Financial Analysis and FinTech at The Hang Seng University of Hong Kong (HSUHK).</p>
+          <p>I am passionate about FinTech, blockchain applications, and data analysis, and I am committed to applying technology to modern financial services.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section container" id="about">
+    <!-- Skills and areas of interest -->
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="eyebrow">What I’m learning</p>
+        <h2 id="skills-title">Skills &amp; interests</h2>
+        <ul class="skill-list">
+          <li class="skill-card">
+            <span class="skill-icon" aria-hidden="true">01</span>
+            <h3>Financial Data Analysis</h3>
+            <p>Python · Excel</p>
+          </li>
+          <li class="skill-card">
+            <span class="skill-icon" aria-hidden="true">02</span>
+            <h3>Blockchain &amp; Smart Contracts</h3>
+            <p>Fundamentals</p>
+          </li>
+          <li class="skill-card">
+            <span class="skill-icon" aria-hidden="true">03</span>
+            <h3>Quantitative Trading</h3>
+            <p>Strategy research</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Selected academic and personal projects -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">About me</p>
-          <h2>Welcome</h2>
-        </div>
-        <div class="about-content">
-          <p>
-            I am [Your Name], a [programme or role] with a curiosity for learning
-            new skills and exploring creative ideas. I enjoy understanding how
-            things work and turning simple concepts into practical outcomes.
-          </p>
-          <p>
-            I am especially interested in thoughtful design, clear communication,
-            and creating work that feels helpful, calm, and easy to use.
-          </p>
-        </div>
-      </section>
-
-      <section class="section alt-section" id="skills">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Skills and interests</p>
-            <h2>What I enjoy learning</h2>
+          <div>
+            <p class="eyebrow">Learning by doing</p>
+            <h2 id="projects-title">Selected projects</h2>
           </div>
-          <ul class="skills-list" aria-label="Skills and interests">
-            <li>Beginner Lab Tutorial</li>
-            <li>Creative problem-solving</li>
-            <li>Designing clear and accessible experiences</li>
-          </ul>
+          <p class="section-aside">A few ways I’ve been bringing finance and technology together.</p>
         </div>
-      </section>
-
-      <section class="section container" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Sample work</h2>
-        </div>
-
-        <div class="projects-grid">
+        <div class="project-grid">
           <article class="project-card">
-            <h3>Project One</h3>
-            <p>
-              A simple project idea for a personal page, portfolio item, or study
-              showcase.
-            </p>
-            <a href="#contact">Edit this card</a>
+            <span class="project-number">PROJECT 01</span>
+            <div class="project-mark mark-chart" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <h3>Python-Based Stock Price Prediction Model</h3>
+            <p>Used machine learning models to analyze historical stock price data and predict short-term trends.</p>
+            <span class="project-tag">Data analysis</span>
           </article>
-
           <article class="project-card">
-            <h3>Project Two</h3>
-            <p>
-              Replace this text with a class assignment, design concept, or small
-              practical build.
-            </p>
-            <a href="#contact">Edit this card</a>
+            <span class="project-number">PROJECT 02</span>
+            <div class="project-mark mark-chain" aria-hidden="true">∞</div>
+            <h3>Blockchain Supply Chain Finance Prototype</h3>
+            <p>In a class group project, designed a smart contract-based supply chain finance solution.</p>
+            <span class="project-tag">Blockchain</span>
           </article>
-
           <article class="project-card">
-            <h3>Project Three</h3>
-            <p>
-              Add your own details here when you are ready to share a finished or
-              in-progress piece.
-            </p>
-            <a href="#contact">Edit this card</a>
+            <span class="project-number">PROJECT 03</span>
+            <div class="project-mark mark-ledger" aria-hidden="true"><span></span><span></span><span></span></div>
+            <h3>Personal Finance Management Dashboard</h3>
+            <p>Built an automated personal income and expense tracking and analysis tool using Excel and VBA.</p>
+            <span class="project-tag">Excel · VBA</span>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section contact-section" id="contact">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Contact</p>
-            <h2>Let’s connect</h2>
-          </div>
-          <p class="contact-text">
-            You can reach me by email at
-            <a href="mailto:[your%20safe%20public%20email]">[your safe public email]</a>.
-          </p>
+    <!-- Contact details; LinkedIn is intentionally marked as not yet available -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-content">
+        <div>
+          <p class="eyebrow">Let’s connect</p>
+          <h2 id="contact-title">Have a question<br>or an idea?</h2>
         </div>
-      </section>
-    </main>
-  </body>
+        <div class="contact-details">
+          <p>I’d be happy to hear from you.</p>
+          <a class="contact-link" href="mailto:s255996@hsu.edu.hk">s255996@hsu.edu.hk <span aria-hidden="true">↗</span></a>
+          <p class="linkedin-note">LinkedIn: Coming Soon</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple page footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>WEI ZiZhou <span>·</span> FAFT Portfolio</p>
+      <a href="#home">Back to top ↑</a>
+      <p>Made with care in Hong Kong</p>
+    </div>
+  </footer>
+</body>
 </html>
